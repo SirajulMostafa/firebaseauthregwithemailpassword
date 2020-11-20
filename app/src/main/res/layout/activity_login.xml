@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".Login">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="196dp"
@@ -23,7 +22,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="343dp"
-        android:layout_height="274dp"
+        android:layout_height="228dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,47 +31,33 @@
         app:layout_constraintVertical_bias="0.715">
 
         <EditText
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtEmail_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:paddingBottom="20dp" />
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/txtPassword"
+            android:id="@+id/txtPassword_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:inputType="textPassword"
-            android:paddingBottom="20dp" />
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btnSingUp"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:paddingBottom="20dp"
-            android:text="Sign Up" />
-
-        <TextView
-            android:id="@+id/already_reg_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Already Register?"
-            android:textAlignment="center"
-            android:textColor="@color/purple_200"
-            android:textSize="18sp" />
-
+            android:text="Login" />
 
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBar_Login"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,5 +67,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.352" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
